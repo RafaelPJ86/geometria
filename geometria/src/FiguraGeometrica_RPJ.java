@@ -1,5 +1,8 @@
 
 public abstract class FiguraGeometrica_RPJ {
+	public double semiPerimetro() {
+		return this.perimetro() / 2;
+	}
 
 	protected String tipoFigura;
 
