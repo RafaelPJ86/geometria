@@ -6,7 +6,14 @@ public class Circulo_RPJ extends FiguraGeometrica_RPJ {
 	
 	public Circulo_RPJ(double r, String tipoFigura) {
 		super(tipoFigura);
-		radio = r;
+		if(r<0) {
+			radio = r*(-1);
+
+		}else {
+			
+			radio = r;
+		}
+		
 	}
 
 	@Override
